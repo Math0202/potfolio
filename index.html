@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangeni Matheus - Full-Stack Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="top_dog.jpeg" type="image/jpeg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+    </header>
+    <canvas id="particle-canvas"></canvas>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero-image">
+                    <img src="top_dog.jpeg" alt="Tangeni Matheus" class="profile-pic">
+                </div>
+                <h1></h1>
+                <h2></h2>
+                <br>
+                <br>
+                <p>Passionate about creating impactful solutions and driving innovation</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+                
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <hr>
+                <p>I am a passionate and results-oriented professional with a strong ability to lead and collaborate within diverse teams. Driven by innovation and problem-solving, I excel in creating impactful solutions that address challenges effectively and deliver meaningful outcomes.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <hr>
+                <div class="skill-grid">
+                    <!-- High-Demand Skills -->
+                    <div class="skill-item" data-skill="Cloud Computing">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Computing</span>
+                    </div>
+                    <div class="skill-item" data-skill="Artificial Intelligence">
+                        <i class="fas fa-robot"></i>
+                        <span>Artificial Intelligence</span>
+                    </div>
+                    <div class="skill-item" data-skill="Data Analytics">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Data Analytics</span>
+                    </div>
+                    <div class="skill-item" data-skill="APIs">
+                        <i class="fas fa-plug"></i>
+                        <span>APIs</span>
+                    </div>
+        
+                    <!-- Programming Languages -->
+                    <div class="skill-item" data-skill="Python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item" data-skill="Java">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item" data-skill="Dart">
+                        <i class="fas fa-code"></i>
+                        <span>Dart</span>
+                    </div>
+                    <div class="skill-item" data-skill="Ballerina">
+                        <i class="fas fa-code"></i>
+                        <span>Ballerina</span>
+                    </div>
+                    <div class="skill-item" data-skill="PHP">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item" data-skill="SQL">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+        
+                    <!-- Development Tools and Frameworks -->
+                    <div class="skill-item" data-skill="Docker">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill-item" data-skill="Kafka">
+                        <i class="fas fa-stream"></i>
+                        <span>Kafka</span>
+                    </div>
+                    <div class="skill-item" data-skill="Flutter">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-item" data-skill="Native App Dev">
+                        <i class="fas fa-code"></i>
+                        <span>Native App Dev</span>
+                    </div>
+                    <div class="skill-item" data-skill="Web Dev">
+                        <i class="fas fa-code"></i>
+                        <span>Web Dev</span>
+                    </div>
+        
+                    <!-- Web Technologies -->
+                    <div class="skill-item" data-skill="HTML & CSS">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML & CSS</span>
+                    </div>
+        
+                    <!-- Operating Systems and Networking -->
+                    <div class="skill-item" data-skill="Linux">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-item" data-skill="Networking">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Networking</span>
+                    </div>
+        
+                    <!-- Creative and Design Tools -->
+                    <div class="skill-item" data-skill="Canva & Figma">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <span>Canva & Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <hr>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Head of Operations & Technology</h3>
+                            <h4>Ausgezeichnet Technology Group CC (Start-up)</h4>
+                            <p>April 2024 – Current</p>
+                            <p>Responsible Research and Development of Okaluli AI SMS Chat bot.</p>
+                            <img height="140" src="okaluli.jpg" alt="okaluli">
+                            <br>
+                            <a href="https://www.linkedin.com/company/Okaluli" target="_blank">www.linkedin.com/company/Okaluli</a><br>
+                            <a href="https://www.okaluli.africa" target="_blank">www.okaluli.africa</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>IT Consultant</h3>
+                            <h4>Dynamic Mobile Solutions PTY</h4>
+                            <p>July 2024 – November 2024</p>
+                            <p>Facilitate OnGolf Tech System development and establish relationships & maintain relationships with golf stakeholders.</p>
+                            <img height="100" src="dymoso.png" alt="dymoso">
+                            <br>
+                            <a href="https://www.dymoso.com" target="_blank">www.dymoso.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Software Developer & IT Consultant</h3>
+                            <h4>Spybitech Investment CC</h4>
+                            <p>October 2024 - Current</p>
+                            <p>Web and Mobile app full-stack senior developer.</p>
+                            <img src="spybitech.jpg" height="90" alt="">
+                            <br>
+                            <a href="https://www.spybitech.com.na" target="_blank">www.spybitech.com.na</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <hr>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Computer Science (Software Development)</h3>
+                            <h4>Namibian University of Science & Technology (NUST)</h4>
+                            <p>February 2023 – Current</p>
+                            <img height="70" src="nust.png" alt="NUST">
+                            <br>
+                            <a href="http://www.nust.com.na">www.nust.com.na</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>AS-Level Science Student</h3>
+                            <h4>Etosha Senior Secondary School</h4>
+                            <p>Graduated December 2021</p>
+                            <img height="120" src="etosha.jpg" alt="Etosha School">
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Online Entrepreneurship Programme</h3>
+                            <h4>Technological Higher Education Network South Africa</h4>
+                            <p>Graduated November 2023</p>
+                            <img height="80" src="thensa.jpg" alt="THENSA">
+                            <br>
+                            <a href="https://thensa.co.za/">https://thensa.co.za/</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="achievements">
+            <div class="container">
+                <h2>Achievements</h2>
+                <hr>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Certificate Of Recognition</h3>
+                            <h4>Africa To Silicon Valley</h4>
+                            <p>September 2024</p>
+                            <img src="a2sv.png" height="70" alt="Africa To Silicon Valley">
+                            <br>
+                            <a href="http://www.a2sv.org">www.a2sv.org</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Top Younth Innovator</h3>
+                            <h4>Ministry of Information & Technology (7th National ICT summit)</h4>
+                            <p>September 2024</p>
+                            <img src="ict.jpg" height="80" alt="ICT">
+                            <br>
+                            <a href="https://ictsummit.gov.na">www.ictsummit.gov.na</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Volunteer</h3>
+                            <h4>World Food Programme</h4>
+                            <p>August 2024</p>
+                            <img src="wfp.jpg" height="80" alt="World Food Programme">
+                            <br>
+                            <a href="https://www.wfp.org/countries/namibia">https://www.wfp.org</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Certificate Of Participation</h3>
+                            <h4>Techstars Startup Weekend Windhoek</h4>
+                            <p>August 2023</p>
+                            <img src="techstar.jpg" height="100" alt="Techstars">
+                            <br>
+                            <a href="http://www.techstars.com">www.techstars.com</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Certificate of Completion</h3>
+                            <h4>Adalo Academy</h4>
+                            <p>June 2023</p>
+                            <img src="adalo.png" height="140" alt="Adalo">
+                            <br>
+                            <a href="http://www.adalo.com">www.adalo.com</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Certificate Of Participation</h3>
+                            <h4>UNICEF & Ministry of Education</h4>
+                            <p>June 2023</p>
+                            <img src="unicef.png" height="40" alt="UNICEF">
+                            <br>
+                            <a href="https://www.unicef.org/namibia/">www.unicef.org</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <hr>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>081 803 1157</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>tangenimatheus0202@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Erf: 62, Hosea Kutako Drive, Windhoek North</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.github.com/math0202" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tangeni-matheus" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mathew._.na/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/matheus.tangoz" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tangeni Matheus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
